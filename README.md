@@ -14,14 +14,26 @@ RUN go build -o binary
 
 ENTRYPOINT ["/app/binary"]
 
-# save as file Dockerfile di folder project
+### Installation
 
-# run
-# docker build -t image-name .
-# docker images
+1. save as file Dockerfile di folder project
+2. Run in terminal this command
+   ```sh
+   docker build -t image-name .
+   ```
+3. Cek docker images
+   ```sh
+   docker images
+   ```
+4. running docker image with this command
+   ```js
+   docker run --restart=always -p port:port nama-images
+   ```
+Example
+   ```js
+   example: docker run --restart=always -p 9000:9000 golang-backend
+   ```
 
-# running docker image with this command
-# docker run --restart=always -p port:port nama-images
-# example: docker run --restart=always -p 9000:9000 golang-backend
+
 
 
