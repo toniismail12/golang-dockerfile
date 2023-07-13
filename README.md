@@ -30,11 +30,11 @@ ENTRYPOINT ["/app/binary"]
    ```
 4. running docker image with this command
    ```js
-   docker run --restart=always -p port:port nama-images
+   docker run -d --restart=always -p port:port nama-images
    ```
 Example
    ```js
-   example: docker run --restart=always -p 9000:9000 golang-backend
+   example: sudo docker run -d --restart=always -p 9001:9001 toni-gaming
    ```
 
 
