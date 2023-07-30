@@ -30,13 +30,13 @@ ENTRYPOINT ["/app/binary"]
    ```
 4. running docker image with this command
    ```js
-   docker run -d --restart=always -p port:port nama-images
+   docker run -d --restart=always -p port-access:expose-port nama-images
    ```
 Example
    ```js
-   example: sudo docker run -d --restart=always -p 9001:9001 toni-gaming
+   1. example: sudo docker run -d --restart=always -p 9001:9001 toni-gaming
+   2. example: sudo docker run -d --restart=always -p 9001:80 toni-gaming
    ```
-
-
+5. access url http://localhost:9001
 
 
